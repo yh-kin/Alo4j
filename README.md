@@ -93,10 +93,10 @@ Especially If you use Java8, you can improve readability and performance.
 method begin
 ```
 // with static import
-logWrapper.trace(Alo4JHelper.methodBegin(param1, param2));
+logWrapper.trace(methodBegin(param1, param2));
 
 // without static import "Alo4JHelper"
-logWrapper.trace(methodBegin(param1, param2));
+logWrapper.trace(Alo4JHelper.methodBegin(param1, param2));
 ```
 resut is 
 ```
@@ -104,13 +104,15 @@ Begin method [targeMethodName]
 param[0]<java.lang.String>: param1-String
 param[1]<java.lang.Integer>: 123
 ```
+<br/>
+<br/>
 method end
 ```
 // with static import
-logWrapper.trace(Alo4JHelper.methodEnd(resultValue));
+logWrapper.trace(methodEnd(resultValue));
 
 // without static import "Alo4JHelper"
-logWrapper.trace(methodEnd(resultValue));
+logWrapper.trace(Alo4JHelper.methodEnd(resultValue));
 ```
 resut is 
 ```
