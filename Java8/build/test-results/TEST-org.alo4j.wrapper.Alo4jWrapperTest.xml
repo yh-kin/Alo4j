@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.alo4j.wrapper.Alo4jWrapperTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2016-02-13T11:56:29" hostname="yonghyun-desktop" time="0.011">
+  <properties/>
+  <testcase name="lambda_condition" classname="org.alo4j.wrapper.Alo4jWrapperTest" time="0.003"/>
+  <testcase name="lambda_function_with_when" classname="org.alo4j.wrapper.Alo4jWrapperTest" time="0.002"/>
+  <testcase name="chaining_test1" classname="org.alo4j.wrapper.Alo4jWrapperTest" time="0.0"/>
+  <testcase name="chaining_test2" classname="org.alo4j.wrapper.Alo4jWrapperTest" time="0.001"/>
+  <testcase name="lambda_function1" classname="org.alo4j.wrapper.Alo4jWrapperTest" time="0.0"/>
+  <testcase name="begin_method" classname="org.alo4j.wrapper.Alo4jWrapperTest" time="0.002"/>
+  <testcase name="same_class_in_different_package" classname="org.alo4j.wrapper.Alo4jWrapperTest" time="0.0"/>
+  <testcase name="printLocation_basic_test" classname="org.alo4j.wrapper.Alo4jWrapperTest" time="0.0"/>
+  <testcase name="end_method" classname="org.alo4j.wrapper.Alo4jWrapperTest" time="0.0"/>
+  <testcase name="lambda_condition2" classname="org.alo4j.wrapper.Alo4jWrapperTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

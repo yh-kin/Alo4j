@@ -1,0 +1,5 @@
+rootProject.name = 'alo4j'
+
+include 'Java5'
+// include 'Java8'
+// include 'Helper'
