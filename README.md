@@ -2,7 +2,7 @@
 Additional Logger Option for Java
 
 ## Versioning
-This library is now 0.1
+This library is now 0.1<br/>
 I am developing this and update continuously.<br/>
 0.1 version is now working but it might have some issue.<br/>
 If you found bugs. please send me the detail.<br/>
@@ -48,7 +48,7 @@ logWrapper.trace(Alo4JHelper.variableOf("param", obj));
 ```
 result is
 ```
-target<resources.variable.VariablePrivateVariable>
+param<org.sample.Variable>
 > param.name<String>: kin
 > param.age<int>: 31
 > param.weight<double>: 60.1
@@ -93,28 +93,29 @@ Especially If you use Java8, you can improve readability and performance.
 method begin
 ```
 // with static import
-logWrapper.trace(Alo4JHelper.methodBegin(param1, param2));
+logWrapper.trace(methodBegin(param1, param2));
 
 // without static import "Alo4JHelper"
-logWrapper.trace(methodBegin(param1, param2));
+logWrapper.trace(Alo4JHelper.methodBegin(param1, param2));
 ```
 resut is 
 ```
-Begin method [printMethodBegin]
+Begin method [targeMethodName]
 param[0]<java.lang.String>: param1-String
 param[1]<java.lang.Integer>: 123
 ```
+<br/>
 method end
 ```
 // with static import
-logWrapper.trace(Alo4JHelper.methodEnd(resultValue));
+logWrapper.trace(methodEnd(resultValue));
 
 // without static import "Alo4JHelper"
-logWrapper.trace(methodEnd(resultValue));
+logWrapper.trace(Alo4JHelper.methodEnd(resultValue));
 ```
 resut is 
 ```
-End method [printMethodEnd]
+End method [targeMethodName]
 return<java.lang.Boolean>: false
 ```
 
