@@ -48,7 +48,7 @@ logWrapper.trace(Alo4JHelper.variableOf("param", obj));
 ```
 result is
 ```
-target<resources.variable.VariablePrivateVariable>
+param<org.sample.Variable>
 > param.name<String>: kin
 > param.age<int>: 31
 > param.weight<double>: 60.1
