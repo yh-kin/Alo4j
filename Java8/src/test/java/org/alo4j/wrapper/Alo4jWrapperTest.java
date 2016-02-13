@@ -3,6 +3,7 @@ package org.alo4j.wrapper;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+import org.alo4j.helper.Alo4jHelper;
 import org.junit.Test;
 import org.slf4j.Logger;
 
@@ -168,7 +169,6 @@ public class Alo4jWrapperTest {
 		String result = "";
 		try{
 			loggerWrapper.when(true).trace(()->{return "this is trace in F.run";});
-			
 //			if(logger.isTrace()){
 //				if(condition){
 //					logger.trace("this is trace in F.run");

@@ -106,7 +106,7 @@ public class ObjectDetailFormatterTest {
 				"> target.doubleIterable[0]: 1.2\n" + 
 				"> target.doubleIterable[1]: 3.4\n" + 
 				"> target.doubleIterable[2]: 5.6";
-		
+		System.out.println(result);
 		assertThat(result, is(expected));
 	}
 	

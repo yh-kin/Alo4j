@@ -83,7 +83,7 @@ public class Alo4jWrapperTest {
 				"Begin method [printMethodBegin]\n" + 
 				"param[0]<java.lang.String>: this is string\n" + 
 				"param[1]<java.lang.Integer>: 123";
-		
+		System.out.println(result);
 		assertThat(result, is(expected));
 	}
 	
@@ -194,15 +194,15 @@ public class Alo4jWrapperTest {
 	public void lambda_condition() throws Exception {
 		String result = "";
 		try{
-			loggerWrapper.when(new Condition() {
-				protected boolean run() {
-					return true;
-				}
-			}).trace(new Log() {
-				public String print() {
-					return "this should be printed";
-				}
-			});
+	loggerWrapper.when(new Condition() {
+		protected boolean run() {
+			return true;
+		}
+	}).trace(new Log() {
+		public String print() {
+			return "this should be printed";
+		}
+	});
 			
 //			if(logger.isTrace()){
 //				if(condition){

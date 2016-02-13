@@ -76,13 +76,14 @@ public class Alo4jWrapper implements LogLevelWrapper{
 	}
 
 	public LogLevelWrapper when(Condition condition){
-		this.condition = condition;
-		return this;
+		Alo4jWrapper wrapper = new Alo4jWrapper(logger);
+		wrapper.condition = condition;
+
+		return wrapper;
 	}
 	
 	public LogLevelWrapper when(final boolean condition) {
-		this.condition = () -> {return condition;};
-		return this;
+		return when(() -> {return condition;});
 	}
 
 	public static enum Level{
