@@ -1,5 +1,0 @@
-rootProject.name = 'Alo4j'
-
-include 'Java5'
-include 'Java8'
-include 'Helper'
