@@ -2,7 +2,7 @@
 Additional Logger Option for Java
 
 ## Versioning
-This library is now 0.1
+This library is now 0.1<br/>
 I am developing this and update continuously.<br/>
 0.1 version is now working but it might have some issue.<br/>
 If you found bugs. please send me the detail.<br/>
