@@ -79,7 +79,7 @@ loggerWrapper.when(new Condition() {
 ```
 Above code is same with
 ```
-if(logger.isTrace()){
+if(logger.isTraceEnabled()){
 	if(condition){
 		logger.trace("this is trace in F.run");
 	}
