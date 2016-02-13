@@ -105,7 +105,6 @@ param[0]<java.lang.String>: param1-String
 param[1]<java.lang.Integer>: 123
 ```
 <br/>
-<br/>
 method end
 ```
 // with static import
