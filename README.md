@@ -100,7 +100,7 @@ logWrapper.trace(methodBegin(param1, param2));
 ```
 resut is 
 ```
-Begin method [printMethodBegin]
+Begin method [targeMethodName]
 param[0]<java.lang.String>: param1-String
 param[1]<java.lang.Integer>: 123
 ```
@@ -114,7 +114,7 @@ logWrapper.trace(methodEnd(resultValue));
 ```
 resut is 
 ```
-End method [printMethodEnd]
+End method [targeMethodName]
 return<java.lang.Boolean>: false
 ```
 
