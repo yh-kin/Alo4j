@@ -25,10 +25,10 @@ Then, you can use functions of Alo4J
 
 #### print currentLocation
 ```
-// with static import
+// with static import "Alo4JHelper"
 loggerWrapper.warn(currentLocation("here!!"));
 
-// without static import "Alo4JHelper"
+// without static import
 loggerWrapper.warn(Alo4JHelper.currentLocation("here!!"));
 ```
 then result is
@@ -40,10 +40,10 @@ if you use IDE, you can move to the location only click the line "(SampleClass.j
 
 #### print Object variables
 ```
-// with static import
+// with static import "Alo4JHelper"
 logWrapper.trace(variableOf("param", obj));
 
-// without static import "Alo4JHelper"
+// without static import
 logWrapper.trace(Alo4JHelper.variableOf("param", obj));
 ```
 result is
@@ -92,10 +92,10 @@ Especially If you use Java8, you can improve readability and performance.
 #### method begin and end logging
 method begin
 ```
-// with static import
+// with static import "Alo4JHelper"
 logWrapper.trace(methodBegin(param1, param2));
 
-// without static import "Alo4JHelper"
+// without static import
 logWrapper.trace(Alo4JHelper.methodBegin(param1, param2));
 ```
 resut is 
@@ -107,10 +107,10 @@ param[1]<java.lang.Integer>: 123
 <br/>
 method end
 ```
-// with static import
+// with static import "Alo4JHelper"
 logWrapper.trace(methodEnd(resultValue));
 
-// without static import "Alo4JHelper"
+// without static import
 logWrapper.trace(Alo4JHelper.methodEnd(resultValue));
 ```
 resut is 
