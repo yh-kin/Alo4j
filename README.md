@@ -79,7 +79,7 @@ loggerWrapper.when(new Condition() {
 ```
 Above code is same with
 ```
-if(logger.isTrace()){
+if(logger.isTraceEnabled()){
 	if(condition){
 		logger.trace("this is trace in F.run");
 	}
@@ -120,5 +120,5 @@ return<java.lang.Boolean>: false
 ```
 
 ## Download Jar files
-- Alo4J for Java5~7 (Alo4J): http://file.upload.pe/aAc
-- Alo4J for Java8 (Alo4J8): http://file.upload.pe/aAd
+- Alo4J for Java5~7 (Alo4J): http://file.upload.pe/aAj
+- Alo4J for Java8 (Alo4J8): http://file.upload.pe/aAh
