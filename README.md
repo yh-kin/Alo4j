@@ -64,8 +64,8 @@ This print all (include private) variables.
 // in Java8 (using lambda)
 loggerWrapper.when(()->{return condition;})
 			.trace(()->{return "logging message";});
-
-
+```
+```
 // in Java5~Java7
 loggerWrapper.when(new Condition() {
 	protected boolean run() {
