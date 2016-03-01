@@ -1,6 +1,6 @@
 sourceCompatibility = 1.8
 archivesBaseName = 'Alo4j8'
-version = '0.1'
+version = '0.1-SNAPSHOT'
 
 dependencies {
 	compile 'org.slf4j:slf4j-api:1.7.14'

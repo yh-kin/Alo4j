@@ -5,6 +5,7 @@ apply plugin: 'eclipse'
 subprojects {
     apply plugin: 'java'
     apply plugin: 'eclipse'
+    apply plugin: 'maven'
     
     group 'org.alo4j'
  
@@ -30,5 +31,20 @@ subprojects {
 	tasks.withType(Test) {
 	    scanForTestClasses = false
 	    include "**/*Test.class"
+	}
+	
+	uploadArchives {
+		uploadArchives.dependsOn test
+	
+	    repositories {
+			mavenDeployer {
+				repository (url: "http://kin.iptime.org:8080/nexus/content/repositories/releases/"){
+					authentication(userName: "admin", password: "admin123")
+				}
+				snapshotRepository (url : "http://kin.iptime.org:8080/nexus/content/repositories/snapshots/"){
+					authentication(userName: "admin", password: "admin123")
+				}
+	       }
+	    }
 	}
 }
